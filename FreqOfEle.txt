@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<stdlib.h>
+//program to count the frequency of element
+int
+main ()
+{
+  int arr[] = { 10, 20, 40, 10, 30, 40, 50 };
+  int size = sizeof (arr) / sizeof (arr[0]);
+  int search_element, freq = 0;
+  scanf ("%d", &search_element);
+  //Implementing linear search algorithm
+  for (int index = 0; index < size; index++)
+    {
+      if (arr[index] == search_element)
+	{
+	  freq++;
+
+	}
+
+    }
+  printf ("Frquency : %d\n", freq);
+  return 0;
+}
