@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<stdlib.h>
+int
+main ()
+{
+  int arr[] = { 10, 20, 30, 40, 50 };
+  int size = sizeof (arr) / sizeof (arr[0]);
+  int search_element;
+  scanf ("%d", &search_element);
+  //Implementing linear search algorithm
+  for (int index = 0; index < size; index++)
+    {
+      if (arr[index] == search_element)
+	{
+	  printf ("Found @ %d", index + 1);
+	  exit (0);
+	}
+
+    }				//End for
+  printf ("Not found");
+
+  return 0;
+}
