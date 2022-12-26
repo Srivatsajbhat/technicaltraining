@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  int size;
+  scanf ("%d", &size);
+  //array declaration
+  int arr[size];
+  //Getting values for array
+  for (int index = 0; index < size; index++)
+    scanf ("%d", &arr[index]);
+    //Swapping an array
+    for(int lb=0,ub=size-1;lb<ub;lb++,ub--)
+    {
+            int temp=arr[lb];
+            arr[lb]=arr[ub];
+            arr[ub]=temp;
+    }
+  //printing array elements
+   for (int index = 0; index < size; index++)
+    printf ("%d ", arr[index]);
+
+  return 0;
+}

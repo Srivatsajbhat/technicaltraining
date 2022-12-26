@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  int size;
+  scanf ("%d", &size);
+  //array declaration
+  int arr[size];
+  //Getting values for array
+  for (int index = 0; index < size; index++)
+    scanf ("%d", &arr[index]);
+  //printing array elements
+  for (int index = 0; index < size; index++)
+    printf ("%d ", arr[index]);
+
+  return 0;
+}
