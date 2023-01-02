@@ -1,0 +1,17 @@
+#include<stdio.h>
+//Program to sort an element using bubble sort
+int main ()
+{
+  int arr[] = { 10, 20, 11, 8, 7, 3, 4, 1 };
+  int size = sizeof (arr) / sizeof (arr[0]);
+  //implementing Bubble sort algorithm
+  for (int i = 0; i < size - 1; i++)
+    for (int j = i + 1; j < size; j++)
+      if (arr[i] > arr[j])
+	//swapping array elements
+	arr[i] = arr[i] + arr[j] - (arr[j] = arr[i]);
+  //printing the sorted array elements
+  for (int index = 0; index < size; index++)
+    printf ("%d ", arr[index]);
+  return 0;
+}
